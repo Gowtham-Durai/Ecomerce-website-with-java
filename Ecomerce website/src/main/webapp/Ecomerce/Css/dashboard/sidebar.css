@@ -1,0 +1,35 @@
+.dashboard-frame{
+    display: grid;
+    grid-template-columns: 0.05fr 0.95fr;
+}
+.dashboard{
+    padding: 20px;
+}
+.sidebar{
+
+    /* width: 40px; */
+    height: 99vh;
+    background-color: white;
+    padding: 10px;
+}
+
+.sidebar span{
+    user-select: none;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    font-size: 30px;
+    text-align: center;
+    width: 100%;
+    color: var(--BG);
+    margin-top: 10px;
+    border-radius: 5px;
+    transition: all 0.3s;
+}
+.sidebar .selected{
+    color: white;
+    background-color: var(--BG);
+    transition: all 0.3s;
+}
+.sidebar span:active{
+  scale: 1.3;
+}

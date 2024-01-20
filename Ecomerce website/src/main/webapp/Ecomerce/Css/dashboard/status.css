@@ -1,0 +1,68 @@
+.Product-status{
+    border-radius: 10px;
+
+    padding-bottom: 10px;
+    width: 90%;
+    height: 80dvh;
+    background-color: white;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    box-shadow: 1px 1px 9px  var(--SHADOW);
+    
+}
+.Product-status tbody{
+     overflow-y: auto;
+     overflow-x: hidden;
+     height:70dvh;
+     display:block;
+  
+}
+.Product-status table thead, table tbody tr {
+   margin-left: 5px;
+  display: table;
+  width: 99%;
+  table-layout: fixed;
+}
+.Product-status tbody tr{
+    user-select: none;
+    margin-top: 10px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px var(--SHADOW);
+}
+.Product-status tbody tr:hover{
+    scale: 1.03;
+    transition: 0.2s;
+}
+.Product-status tbody::before{
+    content: "\200C";
+    display: block;
+
+}
+.Product-status thead th{
+    color: var(--BG);
+    
+}
+span{cursor: pointer;}
+span.edit{
+    color:rgb(125, 255, 125);
+}
+span.delete{
+    color:rgb(255, 86, 86);
+}
+.Product-status tbody td{
+    
+    text-align: center;
+}
+.Product-status tbody img{
+    width:40px;
+    padding: 4px;
+    border-radius: 5px;
+    background-color: rgb(240, 240, 240);
+}
+.Product-status table{
+    border-collapse:separate;
+    border-spacing: 0 10px;
+    width: 100%;
+    font-family: 'Roboto',sans-serif;
+    color: var(--SHADOW);;
+}

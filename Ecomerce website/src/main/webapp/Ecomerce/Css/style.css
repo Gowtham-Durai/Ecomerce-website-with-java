@@ -1,0 +1,42 @@
+:root{
+    --BG:#007AFF;
+    --SHADOW:#99c9fc;
+
+}
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+body{
+    height: 100dvh;
+    margin: 0;
+    background-color: #ECEEF2;
+    overflow: hidden;
+}
+.shopping-frame{
+    height: 96vh;
+    overflow-y: auto;
+    display: grid;
+    grid-template-rows: 0.99fr 0.01fr;
+}
+.shopping{
+    display: flex;
+    flex-flow:row wrap;
+    justify-content: center;
+    gap: 0.4dvw;
+    padding: 20px 4dvw 30px 4dvw;
+    
+   
+}
+
+.footer{
+   position: relative;
+    width: 100%;
+    bottom: 0;
+    box-shadow: 0px -1px 3px var(--SHADOW);
+    height: 50px;
+    background-color: white;
+}
+
+

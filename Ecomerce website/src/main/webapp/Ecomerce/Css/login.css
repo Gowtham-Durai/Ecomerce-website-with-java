@@ -1,0 +1,129 @@
+:root{
+    --BG:#007AFF;
+    --SHADOW:#99c9fc;
+
+}
+
+body{
+    margin: 0;
+    background-color: #ECEEF2;
+   
+}
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+.login-frame{
+    padding: 20px;
+    padding-bottom: 0;
+    height: 76dvh;
+    overflow-y: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.login{
+    border-radius: 10px;
+    padding: 20px;
+    background-color: white;
+    width: 60%;
+    height: 88%;
+    display: grid;
+    grid-template-columns: 0.5fr 0.5fr;
+    box-shadow:1px 1px 10px var(--SHADOW);
+    animation: fadein 2s;
+
+}
+@media screen and (max-width:950px) {
+    .login{
+        width: 90%;
+    }
+}
+@media screen and (max-width:350px) {
+    .login{
+     scale: 0.8;
+     height: 90vh;
+    }
+ }
+@media screen and (max-width:600px) {
+    .login{
+        width: 90%;
+        grid-template-columns: 1fr;
+    }
+    .login-img {
+        display: none !important;
+        background-color: rebeccapurple;
+    }
+}
+.login img{
+    width: 80%;
+    display:flex;
+    
+}
+.login-img{
+    display: flex;
+    justify-content: center;
+}
+
+.login-form form{
+    height: 100%;
+    font-weight: 700;
+    font-family:'Poppins', sans-serif;
+    color: var(--BG);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 10px;
+    
+
+
+}
+.login-form label{
+    height: fit-content;
+}
+.login-form form input{
+
+    height: 40px;
+    /* width: f; */
+    font-size:1rem;
+    font-size-adjust: 0.57;
+    padding: 4px;
+    padding-left: 10px;
+    border-radius: 3px;
+    background:#b8daff;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--BG);
+    border: none;
+    transition: outline 0.1s;
+    
+}
+.login-form form input:focus{
+    outline:2px solid var(--BG);
+}
+.login-form form input::placeholder{
+    color: var(--SHADOW);
+}
+
+.login-form form button{
+    width: 100%;
+    height: 40px;
+    padding: 4px;
+    border-radius: 3px;
+    border: 2px solid var(--BG);
+    font-weight: 700;
+    font-family: sans-serif;
+    color: white;
+    background: var(--BG);
+    
+}
+.hint{
+    font-size: .8rem;
+    letter-spacing: -0.3px;
+}
+.hint a{
+    font-size: .8rem;
+    letter-spacing: -0.3px;
+    text-decoration: none;
+}

@@ -1,0 +1,124 @@
+.navbar{
+    font-family: 'Roboto', sans-serif;
+    background: white;
+    height: 35px;
+    padding: 10px;
+    border: 1px solid var(--SHADOW);
+    box-shadow: 1px 1px 8px var(--SHADOW);
+    display: grid;
+    grid-template-columns: 0.2fr 0.70fr 0.1fr ;
+}
+
+.navbar .menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.navbar .logo{
+    text-decoration: none;
+    margin: 0;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+.logo>span:first-child{
+    padding: 7px;
+    background-color:var(--BG) ;
+    width: fit-content;
+    border-radius: 6px;
+    color:white;
+
+}
+.logo span:last-child{
+    color: var(--BG);
+    font-weight: 700;
+}
+.search{
+    width: 80%;
+    display: flex;
+    border-radius: 10px;
+    overflow: hidden;
+    border: none;
+    box-shadow: 1px 1px 5px var(--SHADOW);
+}
+.search input{
+    width: 100%;
+    border: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: var(--BG);
+    
+}
+.search input::placeholder{
+    color: var(--BG);
+}
+.search input:focus{
+    border: none;
+    outline: none;
+}
+.search input::selection{
+    background-color: var(--BG);
+    color: white;
+}
+.search div{
+    background: var(--BG);
+    width: 30px; 
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+
+.navbar p{
+    width: fit-content;
+}
+
+.btn{
+    display: flex;
+    background-color: var(--BG);
+    border-radius: 10px;
+    padding: 5px;
+    padding-right: 10px;
+    color: white;
+    cursor:pointer;
+    user-select: none;
+    text-decoration: none;
+}
+.navbar .cart{
+    position: relative;
+}
+.navbar .cart::after{
+content: '13';
+left: 20px;
+position: absolute;
+font-size:10px;
+font-family: Arial, Helvetica, sans-serif;
+border-radius: 10px;
+color: white;
+background-color: var(--BG);
+padding: 3px;
+}
+
+
+@media screen and (max-width:550px){
+    .navbar>.logo{
+        display: none;
+    }
+    .navbar{
+        grid-template-columns: 0.8fr 0.2fr;
+    }
+    .nav-login-btn{
+        display: none;
+    }
+    .btn{
+        padding-right: 5px;
+    }
+
+    
+}
+
+

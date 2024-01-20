@@ -1,0 +1,108 @@
+.AddProduct{
+    padding: 20px;
+    border-radius: 10px;
+    width: 94%;
+    height: 86%;
+   box-shadow: 1px 1px 5px var(--SHADOW);
+    background-color: white;
+    
+}
+.upload span:active,.dropping{
+    scale: 0.8;
+    transition: scale 0.3s;
+}
+.upload img{
+    width: 80%;
+    height:80%;
+}
+.AddProduct form{
+    display: grid;
+    grid-template-columns:0.5fr 0.5fr;
+}
+.upload-form .details{
+    display: grid;
+    grid-template-columns: 0.3fr 0.7fr;
+    gap: 5px;
+}
+.upload-form button{
+    padding: 10px;
+    grid-column: span 2;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    border: 3px solid var(--SHADOW);
+    background-color: var(--BG);
+    transition: scale 0.3s;
+}
+.upload-form button:active{
+    scale: 0.9;
+    transition: scale 0.3s;
+}
+.upload-form input{
+    border: 3px solid var(--SHADOW);
+    border-radius: 10px;
+    padding: 10px;
+   color: var(--BG);
+}
+.upload-form input:focus{
+    outline: none;
+    border: 3px solid var(--BG);
+}
+.upload-form input::selection{
+    background: var(--BG);
+    color: white;
+ }
+.details .price{
+    user-select: none;
+    color: var(--BG);
+    font-size: 20px;
+}
+.upload{
+    user-select: none;
+    border-radius:20px;
+    width: 400px;
+    height: 200px;
+    border: 2px dashed var(--BG);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.upload span{
+    font-size: 190px;
+    color: var(--SHADOW);
+    transition: scale 0.3s;
+}
+.upload span:active{
+    scale: 0.8;
+    transition: scale 0.3s;
+}
+.description{
+    margin-top: 20px;
+    display: grid;
+    gap: 3px;
+}
+.AddProduct label{
+    color: var(--BG);
+    font-size: 20px;
+    font-weight: 800;
+    font-family: 'Roboto',sans-serif;
+}
+.description textarea{
+    border-radius: 10px;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--BG);
+    height: 80px;
+    width: 100%;
+    border: 2px solid var(--BG);
+    resize:none;
+}
+.description textarea::selection{
+    background: var(--BG);
+    color: white;
+
+}
+.description textarea:focus{
+    outline: none;
+}
